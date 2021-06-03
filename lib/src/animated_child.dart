@@ -80,15 +80,15 @@ class AnimatedChild extends AnimatedWidget {
           color: labelBackgroundColor ??
               (dark! ? Colors.grey[800] : Colors.grey[50]),
           borderRadius: BorderRadius.all(Radius.circular(6.0)),
-          boxShadow: [
-            BoxShadow(
-              color: dark!
-                  ? Colors.grey[900]!.withOpacity(0.7)
-                  : Colors.grey.withOpacity(0.7),
-              offset: Offset(0.8, 0.8),
-              blurRadius: 2.4,
-            )
-          ],
+          // boxShadow: [
+          //   BoxShadow(
+          //     color: dark!
+          //         ? Colors.grey[900]!.withOpacity(0.7)
+          //         : Colors.grey.withOpacity(0.7),
+          //     offset: Offset(0.8, 0.8),
+          //     blurRadius: 2.4,
+          //   )
+          // ],
         ),
         child: Text(label!, style: labelStyle),
       ),
