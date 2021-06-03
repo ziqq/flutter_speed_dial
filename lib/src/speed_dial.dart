@@ -290,8 +290,8 @@ class _SpeedDialState extends State<SpeedDial> with TickerProviderStateMixin {
 
   Widget _renderOverlay() {
     return PositionedDirectional(
-      end: -16.0,
-      bottom: -16.0,
+      end: -50.0,
+      bottom: -50.0,
       top: _open ? 0.0 : null,
       start: _open ? 0.0 : null,
       child: GestureDetector(
