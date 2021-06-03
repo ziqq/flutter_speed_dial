@@ -15,9 +15,13 @@ class BackgroundOverlay extends AnimatedWidget {
 
   Widget build(BuildContext context) {
     final Animation<double> animation = listenable as Animation<double>;
-    return Container(
-      height: MediaQuery.of(context).size.height,
-      color: color?.withOpacity(animation.value * opacity),
+    return SafeArea(
+      top: false,
+      bottom: false,
+      child: Container(
+        height: MediaQuery.of(context).size.height,
+        color: color?.withOpacity(animation.value * opacity),
+      ),
     );
   }
 }
